@@ -167,9 +167,7 @@ public class TicketManager {
     public static void main(String[] args) {
         TicketManager manager = new TicketManager();
 
-        //TODO problem 8 load open tickets from a file
-
-        //TODO Problem 9 how will you know what ticket ID to start with?
+        //TODO problem 8 load open tickets from a file. How will you know to set Ticket.ticketIdCounter to?
 
         manager.mainMenu();
     }
