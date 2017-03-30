@@ -165,11 +165,12 @@ public class TicketManager {
     /* Main is hiding down here. Create a TicketManager object, and call the mainMenu method.
     Avoids having to make all of the methods in this class static. */
     public static void main(String[] args) {
-        TicketManager manager = new TicketManager();
+        Tickets ticks = new Tickets();
+        //TicketManager manager = new TicketManager();
 
         //TODO problem 8 load open tickets from a file. How will you know to set Ticket.ticketIdCounter to?
 
-        manager.mainMenu();
+        //manager.mainMenu();
     }
 
 }
