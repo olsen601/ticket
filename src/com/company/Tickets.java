@@ -13,7 +13,7 @@ public class Tickets extends JFrame {
     private JButton SubmitNewTicket;
     private JButton deleteTicketButton;
     private JTextField DeleteField;
-    private JButton displayAllTicketsButton;
+    private JButton resolveTicketButton;
     private JButton quitButton;
     private JPanel rootPanel;
     private JComboBox Priority;
@@ -68,6 +68,22 @@ protected Tickets() {
 
             String DeleteID = DeleteField.getText();
             int Delete = Integer.parseInt(DeleteID);
+            Delete = Delete - 1;
+            ticketsListModel.remove(Delete);
+
+        }
+    });
+
+    resolveTicketButton.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            String ResolveID = DeleteField.getText();
+            int ResloveID = Integer.parseInt(ResolveID);
+            ResloveID = ResloveID - 1;
+            String Resolved = " resolved";
+            ticketsListModel.set(ResloveID,(ticketsListModel.getElementAt(ResloveID).toString()+" Resolved").)
+
 
         }
     });
